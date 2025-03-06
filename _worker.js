@@ -34,12 +34,12 @@ export default {
      */
     async fetch(request, env, ctx) {
         try {
-            userID = env.UID || userID;
-            proxyIP = env.PROXYIP || proxyIP;
-            dohURL = env.DNS_RESOLVER_URL || dohURL;
-            nodeId = env.NODE_ID || nodeId;
-            apiToken = env.API_TOKEN || apiToken;
-            apiHost = env.API_HOST || apiHost;
+            userID = userID;
+            proxyIP = proxyIP;
+            dohURL = dohURL;
+            nodeId = nodeId;
+            apiToken = apiToken;
+            apiHost = apiHost;
             const upgradeHeader = request.headers.get('Upgrade');
             if (!upgradeHeader || upgradeHeader !== 'websocket') {
                 const url = new URL(request.url);
