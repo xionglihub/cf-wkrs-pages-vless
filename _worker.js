@@ -3,7 +3,7 @@
 import { connect } from 'cloudflare:sockets';
 
 // 建议修改为自己的 UUID
-let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
+let userID = 'd342d11ed4244583b36e524ab1f0afa4';
 
 // 生成配置文件的 CF 优选 IP
 const bestCFIP = "www.gov.se"
@@ -22,7 +22,7 @@ let apiToken = ''; //abcdefghijklmnopqrstuvwxyz123456
 let apiHost = ''; // api.v2board.com
 
 if (!isValidUUID(userID)) {
-    throw new Error('uuid is not valid');
+    //throw new Error('uuid is not valid');
 }
 
 export default {
